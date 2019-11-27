@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "f933997c-e671-49fa-a7fb-dbf829a7eac2",
+		"name": "TeacherTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "709495a5-2020-483e-a18a-fb5cff1a112a",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"刘翔\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"teacher.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "40997437-e36a-40b3-a906-6e769902afe7",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"增加成功\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"爱华\",\n\t\"degree_id\":3,\n\t\"profTitle_id\":1,\n\t\"department_id\":3\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"teacher.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b9528c10-f973-4265-9357-1d980ee52727",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"数据库修改成功\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":4,\n\t\"name\":\"刘萨\",\n\t\"degree_id\":3,\n\t\"profTitle_id\":1,\n\t\"department_id\":3\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"teacher.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/teacher.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dc266e47-e132-4c7f-8896-b4bc858e6b2c",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"删除成功\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/teacher.ctl?id=5",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"teacher.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

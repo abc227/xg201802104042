@@ -1,0 +1,11 @@
+create table teacher(
+    id bigint not null auto_increment,
+    name varchar(225) not null,
+    proftitle_id bigint not null,
+    degree_id bigint not null,
+    department_id bigint not null,
+    foreign key(proftitle_id) references proftitle(id),
+    foreign key(degree_id) references degree(id),
+    foreign key(department_id) references department(id),
+    primary key(id)
+);

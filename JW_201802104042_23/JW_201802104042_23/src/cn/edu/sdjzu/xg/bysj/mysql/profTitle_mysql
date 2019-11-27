@@ -1,0 +1,7 @@
+create table profTitle(
+    id bigint not null auto_increment,
+    description varchar(255) not null,
+    no varchar(255) not null,
+    remarks varchar(255),
+
+    primary key(id));
