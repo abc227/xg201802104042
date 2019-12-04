@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "8455c3e4-254f-4c12-a198-c2ec0672cf99",
+		"name": "DepartmentTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/department.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b5ccb25-5dbb-47ea-8779-d627f1614d1d",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"建筑系\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"description\": \"信息系1\",\n        \"id\": 2,\n        \"no\": \"02\",\n        \"remarks\": \"\",\n        \"school_id\":1\n     \n    }"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/department.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/department.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3b987eec-3579-49e2-80d5-ca89497cf563",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"数据库操作成功\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"description\":\"管理系\",\r\n\t\"no\":\"10\",\r\n\t\"remarks\":\"\",\r\n\t\"school_id\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/department.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/department.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8545ccd8-d16d-4226-be9f-4674755fbe49",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"数据库操作成功\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":4,\n\t\"description\":\"计算机系\",\n\t\"no\":\"04\",\n\t\"remarks\":\"\",\n\t\"school_id\":1\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/department.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/department.ctl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "df41affc-9576-40d7-8d91-c987cae94b55",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"数据库操作成功\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/department.ctl?id=9",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

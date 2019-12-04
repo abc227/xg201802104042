@@ -1,0 +1,9 @@
+create table department(
+    id bigint not null auto_increment,
+    description varchar(225) not null,
+    no varchar(225),
+    remarks varchar(225),
+    school_id bigint not null,
+    primary key(id),
+    foreign key(school_id) references school(id)
+);

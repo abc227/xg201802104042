@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "6ded8bb1-3f07-461d-aaf0-a0c19d072eb7",
+		"name": "Degree Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/degree.ctl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/department.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/degree.ctl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\",\n\t\"no\":\"03\",\n\t\"remarks\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/degree.ctl?id=2",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/degree.ctl",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/degree.ctl?id=1",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/degree.ctl",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/department.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"department.ctl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
