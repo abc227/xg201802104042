@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "c5ec01c7-36a7-4abd-ae2a-7f0b548f22cc",
+		"name": "SchoolTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/school.ctl",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/school.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/school.ctl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/school.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/school.ctl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/school.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://106.54.75.83:8080/bysj1842/school.ctl",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"description\":\"硕士\".\n\t\"no\":\"03\"\n}"
+				},
+				"url": {
+					"raw": "http://106.54.75.83:8080/bysj1842/school.ctl",
+					"protocol": "http",
+					"host": [
+						"106",
+						"54",
+						"75",
+						"83"
+					],
+					"port": "8080",
+					"path": [
+						"bysj1842",
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
